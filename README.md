@@ -1,14 +1,10 @@
 # React Micro Projects Portfolio
 
----
-
 ## Introduction
 
 `frontend-lab-micro`는 제가 **React 실력을 향상시키기 위해 만든 개인 연습 공간이며, 학습과 실습 결과물을 정리해둔 레포지토리**입니다.
 
 > 단순히 완성된 결과물을 보여주는 것이 아니라, 직접 구현 과정을 통해 리액트 기술 전반을 학습하고 숙달하는 것을 목표로 합니다.
-
----
 
 ## Tech Stack & Configuration
 
@@ -24,41 +20,37 @@
 | **SCSS Structure**    | `functions`, `mixins`, `tokens`로 재사용성 확보         |
 | **CSS 변수 정책**     | Sass 변수 대신 `:root` 변수를 사용하여 단순화           |
 
----
-
-## 🧩 Project Structure
+## Project Structure
 
 ```
 frontend-lab-micro/
- ┣ app/
- ┃ ┣ micro-projects/
- ┃ ┃ ┣ [slug]/              # 동적 라우팅용 폴더
- ┃ ┃ ┣ lab-todo/            # 실험 1: Todo App
- ┃ ┃ ┗ data.js              # 프로젝트 메타데이터
- ┃ ┣ favicon.ico
- ┃ ┣ globals.scss
- ┃ ┣ layout.jsx
- ┃ ┣ page.jsx
- ┃ ┗ ThemeInitializer.jsx
- ┣ assets/
- ┃ ┗ styles/
- ┃   ┣ functions/
- ┃   ┣ mixins/
- ┃   ┣ tokens/
- ┃   ┗ _index.scss
- ┣ components/
- ┃ ┣ Header/
- ┃ ┣ Nav/
- ┃ ┗ ThemeToggle.jsx
- ┣ public/
- ┣ eslint.config.mjs
- ┣ next.config.ts
- ┣ package.json
- ┣ postcss.config.mjs
- ┗ README.md
+ | app/
+ | |- micro-projects/
+ | | |- [slug]/              # 동적 라우팅용 폴더
+ | | |- lab-todo/            # 실험 1: Todo App
+ | | |_ data.js              # 프로젝트 메타데이터
+ | |- favicon.ico
+ | |- globals.scss
+ | |- layout.jsx
+ | |- page.jsx
+ | |_ ThemeInitializer.jsx
+ |- assets/
+ | |_ styles/
+ |   |- functions/
+ |   |- mixins/
+ |   |- tokens/
+ |   |_ _index.scss
+ |- components/
+ | |- Header/
+ | |- Nav/
+ | |_ ThemeToggle.jsx
+ |- public/
+ |- eslint.config.mjs
+ |- next.config.ts
+ |- package.json
+ |- postcss.config.mjs
+ |_ README.md
 ```
-
----
 
 <!-- ## ⚗️ Micro Projects
 
@@ -83,8 +75,6 @@ frontend-lab-micro/
 - **컴포넌트 재사용성**, **상태 분리**, **렌더링 최적화**를 체득
 - 실무 프로젝트에 바로 적용 가능한 **구조적 설계 감각** 습득
 
----
-
 ## How to Run
 
 ```bash
@@ -97,8 +87,6 @@ npm run dev
 # 3. Open in browser
 http://localhost:3000
 ```
-
----
 
 ## License & Notes
 
