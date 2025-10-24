@@ -1,0 +1,13 @@
+/* === MIXINS (기본 레이아웃 몇 가지) === */
+@mixin flex-center($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin container($max: 1280px, $pad: 1rem) {
+  max-width: $max;
+  margin-inline: auto;
+  padding-inline: $pad;
+}

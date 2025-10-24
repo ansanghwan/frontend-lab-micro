@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hero {
+  margin: var(--space-6) 0 var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: color-mix(in oklab, var(--surface) 85%, var(--text) 15%);
+}
+
+.heroImg {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.desc {
+  color: var(--text);
+  margin-bottom: var(--space-6);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.btnPrimary,
+.btnSecondary {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.06s ease, background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.btnPrimary {
+  color: #fff;
+  background: var(--primary);
+  border: 1px solid var(--primary-600);
+}
+.btnPrimary:hover {
+  background: var(--primary-600);
+}
+.btnPrimary:active {
+  transform: translateY(1px);
+}
+
+.btnSecondary {
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.btnSecondary:hover {
+  border-color: var(--primary);
+}
+.btnSecondary:active {
+  transform: translateY(1px);
+}
