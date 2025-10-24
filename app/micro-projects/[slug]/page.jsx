@@ -1,6 +1,11 @@
 import { notFound } from "next/navigation";
 import { projects } from "../data";
 import styles from "./ProjectDetail.module.scss";
+import TodoApp from "../lab-todo/TodoApp";
+
+const components = {
+  todo: TodoApp,
+};
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -9,6 +14,7 @@ export async function generateStaticParams() {
 export default async function ProjectDetail({ params }) {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
+  const Component = components[slug];
 
   if (!project) return notFound();
 
@@ -17,7 +23,7 @@ export default async function ProjectDetail({ params }) {
       <h1>{project.name}</h1>
       <p>{project.description}</p>
       <div className={styles.content}>
-        <p>이 페이지는 {project.name}의 데모 영역입니다.</p>
+        <Component />
       </div>
     </section>
   );
