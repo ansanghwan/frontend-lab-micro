@@ -35,6 +35,7 @@ ul,
 ol,
 li {
   list-style: none;
+  padding-left: 0;
 }
 /* ===========================
    Typography
@@ -47,7 +48,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 var(--space-3);
-  color: var(--text);
+  color: inherit;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -73,13 +74,54 @@ h6 {
 
 p {
   margin: 0 0 var(--space-4);
-  color: var(--text);
+  color: inherit;
 }
 
 small {
   color: var(--muted);
 }
 
+blockquote {
+  border-left: 3px solid var(--border);
+  margin: 12px 0;
+  padding: 8px 14px;
+  color: var(--muted);
+  background: #fafafa;
+}
+:where(.white-bg-cont) blockquote {
+  border-color: var(--color-gray-1);
+  color: inherit;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  font-size: 0.92em;
+}
+
+:where(.white-bg-cont) code {
+  background: var(--color-gray-1);
+  border: 1px solid var(--color-gray-1);
+}
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  overflow: auto;
+  code {
+    border: none;
+    padding: 0;
+    background: transparent;
+  }
+}
+:where(.white-bg-cont) pre {
+  background: var(--color-gray-1);
+  border-color: var(--color-gray-1);
+  color: inherit;
+}
 /* ===========================
    Links
    =========================== */
@@ -88,10 +130,6 @@ a {
   color: var(--link);
   text-decoration: none;
   transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-a:hover {
-  opacity: 0.85;
 }
 
 a:focus-visible {
@@ -115,6 +153,22 @@ button {
   box-shadow: var(--shadow-1);
   transition: transform 0.06s ease, background-color 0.15s ease,
     border-color 0.15s ease;
+}
+
+.btn-link {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  transition: background 0.15s ease;
+  background: var(--bg-btn-black);
+  color: #fff;
+}
+.linkBtn:hover {
+  background: #f8fafc;
+}
+:where(.white-bg-cont) .btn-link {
+  border-color: var(--border-white-cont);
+  // color: #93c5fd;
 }
 
 button:hover {
@@ -172,18 +226,8 @@ hr {
   border-top: 1px solid var(--border);
   margin: var(--space-6) 0;
 }
-
-code,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", monospace;
-  background: color-mix(in oklab, var(--surface) 92%, var(--text) 8%);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-}
-
-code {
-  padding: 0 0.3em;
+:where(.white-bg-cont) hr {
+  border-color: var(--color-gray-1);
 }
 
 pre {
@@ -195,8 +239,78 @@ pre {
    Helpers
    =========================== */
 
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  line-height: 1;
+  background: transparent;
+  font-size: 14px;
+  &--blue {
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+  }
+  &--neutral {
+    border-color: #c96442;
+    color: #c96442;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: var(--space-4);
+}
+
+button.btn-toggle-theme {
+  background: transparent;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border: none;
+  box-shadow: var(--shadow-2);
+  background: rgba($color: #fff, $alpha: 0.3);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.white-bg-cont {
+  border: 1px solid var(--border);
+  background: var(--bg-white-cont);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: clamp(16px, 3vw, 24px);
+  color: #5e5d59;
+  font-weight: 500;
+  &__tit,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #141413;
+  }
+  h2 {
+    font-size: 24px;
+    margin: 18px 0 8px;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 16px 0 8px;
+  }
+  p {
+    margin: 10px 0;
+    line-height: 1.7;
+  }
+
+  &__sec {
+    max-width: 600px;
+    word-break: keep-all;
+  }
 }

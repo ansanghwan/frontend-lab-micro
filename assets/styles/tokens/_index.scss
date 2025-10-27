@@ -4,16 +4,28 @@
 
 :root {
   /* Light theme (default) */
-  --bg: #ffffff;
-  --text: #0a0a0a;
+  --bg: #f0eee6;
+  --bg-header: transparent;
+  --bg-white-cont: #faf9f5;
+
+  --text: #30302e;
   --muted: #6b7280;
   --surface: #ffffff;
-  --border: #e5e7eb;
+
+  --border: #14141333;
+  --border-white-cont: #e8e6dc;
 
   --primary: #2563eb;
   --primary-600: #1d4ed8;
+  --bg-btn-black: #1b1b1b;
   --link: #2563eb;
   --focus: #3b82f6;
+
+  --card-bg: #fff;
+  --code-bg: #f8fafc; /* inline code bg */
+  --link: #2563eb; /* blue-600 */
+  --radius: 12px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 
   /* Typography */
   --font-sans: "Pretendard", "Noto Sans KR", system-ui, -apple-system, Segoe UI,
@@ -28,17 +40,20 @@
   --space-4: 1rem;
   --space-6: 1.5rem;
   --radius-sm: 6px;
-  --radius-md: 10px;
+  --radius-md: 12px;
   --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.06);
   --shadow-2: 0 6px 20px rgba(0, 0, 0, 0.08);
 
   /* Misc */
   --outline-width: 2px;
+
+  /* 기타 */
+  --color-gray-1: #e0e0e0;
 }
 
 /* Dark theme */
 html[data-theme="dark"] {
-  --bg: #000000;
+  --bg: #1e1e1e;
   --text: #e5e7eb;
   --muted: #9ca3af;
   --surface: #0b0b0b;
@@ -49,8 +64,8 @@ html[data-theme="dark"] {
   --link: #93c5fd;
   --focus: #60a5fa;
 
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.5);
-  --shadow-2: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-1: 0 1px 2px rgba(255, 255, 255, 0.4);
+  --shadow-2: 0 10px 30px rgba(255, 255, 255, 0.4);
 }
 
 /* Optional: follow system theme */

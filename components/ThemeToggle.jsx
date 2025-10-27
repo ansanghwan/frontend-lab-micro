@@ -25,8 +25,8 @@ export default function ThemeToggle() {
 
   if (!mounted) return null; // 초기 동기화 전엔 버튼 숨기기(깜빡임/헛클릭 방지)
   return (
-    <button onClick={toggle}>
-      {theme === "dark" ? "🌞 Light" : "🌙 Dark"}
+    <button onClick={toggle} className="btn-toggle-theme">
+      {theme === "dark" ? "☀️" : "🌙"}
     </button>
   );
 }
