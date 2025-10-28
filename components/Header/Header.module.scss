@@ -30,7 +30,7 @@ html[data-theme="dark"] {
     line-height: 1.2;
     font-weight: 500;
     &:hover {
-      opacity: 0.8;
+      color: var(--primary);
     }
   }
 }

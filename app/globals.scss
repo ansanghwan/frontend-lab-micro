@@ -40,6 +40,9 @@ select,
 textarea {
   font: inherit;
 }
+img {
+  max-width: 100%;
+}
 /* ===========================
    Typography
    =========================== */
@@ -76,7 +79,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 var(--space-4);
+  margin: 0 0 var(--space-1);
   color: inherit;
 }
 
@@ -164,7 +167,7 @@ button {
   border-radius: var(--radius-md);
   padding: 8px 12px;
   transition: background 0.15s ease;
-  background: var(--bg-btn-black);
+  background: var(--bg-btn);
   color: #fff;
 }
 .linkBtn:hover {
@@ -256,8 +259,8 @@ pre {
     color: #0ea5e9;
   }
   &--neutral {
-    border-color: #c96442;
-    color: #c96442;
+    border-color: var(--badge-neutral);
+    color: var(--badge-neutral);
   }
 }
 
@@ -283,13 +286,13 @@ button.btn-toggle-theme {
   justify-content: center;
   font-size: 1rem;
 }
-
-.white-bg-cont {
+//배경이 하얀색인 카드(다크, 라이트 테마 동일)
+.white-bg-card {
   border: 1px solid var(--border);
   background: var(--bg-white-cont);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: clamp(16px, 3vw, 24px);
+  padding: clamp(rem(16), 3vw, rem(24));
   color: #5e5d59;
   font-weight: 500;
   &__tit,
@@ -316,5 +319,24 @@ button.btn-toggle-theme {
   &__sec {
     max-width: 600px;
     word-break: keep-all;
+  }
+}
+
+.section-card {
+  border-radius: rem(12);
+  background: var(--bg-section-card);
+  border: 1px solid var(--border);
+  color: var(--text-card);
+  padding: clamp(rem(20), 3vw, rem(24));
+  margin-bottom: rem(20);
+  word-break: keep-all;
+  word-wrap: break-word;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-card-tit);
   }
 }

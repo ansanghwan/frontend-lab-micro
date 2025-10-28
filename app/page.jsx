@@ -5,12 +5,13 @@ export default function Home() {
   return (
     <main className={styles.container}>
       {/* 헤더 카드(선택) */}
-      <section className={`white-bg-cont ${styles.headerCard}`}>
+      <section className={`section-card ${styles.headerCard}`}>
         <h1>React Micro Projects</h1>
         <p>
           만들며 숙달하는 React 기술 — 작은 프로젝트로 React의 주요 기술을
           손으로 익히는 실습의 흔적
         </p>
+
         <div className={styles.meta}>
           <div className={styles.badgeWrap}>
             <span className="badge badge--neutral">Learning</span>
@@ -24,8 +25,8 @@ export default function Home() {
       </section>
 
       {/* README 스타일 본문 */}
-      <article className={`white-bg-cont ${styles.md}`}>
-        <div className="white-bg-cont__sec">
+      <article className={`section-card ${styles.prologue}`}>
+        <div className="section-card__sec">
           <h2>Prologue</h2>
           <p>
             10년 전, 내일배움카드로 HTML/CSS를 배우고 혼자 반응형 포트폴리오를
@@ -70,8 +71,10 @@ export default function Home() {
           리액트 기술 전반을 학습하고 숙달하는 것을 목표로 합니다.
         </blockquote> */}
         </div>
-        <hr />
-        <div className="white-bg-cont__sec">
+      </article>
+
+      <article className={`section-card ${styles.tech}`}>
+        <div className="section-card__sec">
           <h2>Tech Stack & Configuration</h2>
           <ul>
             <li>
@@ -84,7 +87,10 @@ export default function Home() {
               <strong>Design</strong>: Dark & Light themes, 반응형 대응
             </li>
           </ul>
-
+        </div>
+      </article>
+      <article className={`section-card ${styles.goals}`}>
+        <div className="section-card__sec">
           <h2>Learning Goals</h2>
           <ol>
             <li>핵심 훅 숙련 (useState/useEffect/useMemo/useCallback)</li>
