@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.left}>
-        <Link href="/">Sanghwan Frontend</Link>
+        <Link href="/">
+          Sanghwan <br /> Frontend
+        </Link>
       </div>
       <div className={styles.right}>
         <Nav className={styles.nav} />

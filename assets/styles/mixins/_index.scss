@@ -11,3 +11,13 @@
   margin-inline: auto;
   padding-inline: $pad;
 }
+
+// 모바일(px), 데스크톱(px) 지정
+@mixin fsize($mobile, $desktop: null) {
+  font-size: remx($mobile);
+  @if $desktop {
+    @media (min-width: 560px) {
+      font-size: remx($desktop);
+    }
+  }
+}

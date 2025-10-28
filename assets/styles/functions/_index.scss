@@ -1,0 +1,9 @@
+// 16px 기준 px → rem
+@function rem($px) {
+  @return #{$px / 16}rem;
+}
+
+// 16px 기준 px → rem × --scale (타이포 전용)
+@function remx($px) {
+  @return calc(#{rem($px)} * var(--scale));
+}

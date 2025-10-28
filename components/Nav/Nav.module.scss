@@ -8,7 +8,7 @@
     display: block;
     color: var(--text);
     font-weight: 500;
-    padding: 12px 10px;
+    padding: 12px 6px;
     font-weight: 500;
     &:hover {
       color: var(--primary);
@@ -20,5 +20,10 @@
       border-radius: var(--radius-sm);
     }
   }
-  margin-right: 10px;
+}
+
+@media (min-width: 560px) {
+  .nav {
+    margin-right: 10px;
+  }
 }

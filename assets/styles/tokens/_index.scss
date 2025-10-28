@@ -1,8 +1,9 @@
 /* ===========================
    THEME TOKENS (:root variables)
    =========================== */
-
 :root {
+  --scale: 0.875; /* 모바일: 14/16 = 0.875 */
+
   /* Light theme (default) */
   --bg: #f0eee6;
   --bg-header: transparent;
@@ -72,5 +73,12 @@ html[data-theme="dark"] {
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     /* (원한다면 dark 변수 복사 가능) */
+  }
+}
+
+/* 560px 이상에서 1x로 */
+@media (min-width: 560px) {
+  :root {
+    --scale: 1;
   }
 }

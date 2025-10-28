@@ -1,7 +1,9 @@
 .container {
   max-width: 920px;
   margin: 0 auto;
-  padding: clamp(20px, 4vw, 40px) 20px;
+  // padding: clamp(20px, 4vw, 40px) 20px;
+
+  padding: clamp(14px, 3vw, 24px);
 }
 
 .headerCard {
@@ -39,9 +41,18 @@
 
 .linkBtn {
   margin-left: auto;
+  width: 100%;
+  text-align: center;
 }
 
 /* Markdown-like styling */
 .md {
   position: relative;
+}
+
+/* 560px 이상에서 1x로 */
+@media (min-width: 560px) {
+  .linkBtn {
+    width: 200px;
+  }
 }

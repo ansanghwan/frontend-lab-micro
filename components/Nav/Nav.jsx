@@ -5,9 +5,9 @@ export default function Nav({ className = "" }) {
   return (
     <nav className={`${styles.nav} ${className}`}>
       <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
+        {/* <li>
+          <Link href="/">About</Link>
+        </li> */}
         <li>
           <Link href="/micro-projects">Micro Projects</Link>
         </li>
