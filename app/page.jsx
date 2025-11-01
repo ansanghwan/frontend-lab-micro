@@ -93,7 +93,10 @@ export default function Home() {
         <div className="section-card__sec">
           <h2>Learning Goals</h2>
           <ol>
-            <li>핵심 훅 숙련 (useState/useEffect/useMemo/useCallback)</li>
+            <li>
+              react.js 핵심 훅 숙달 훈련
+              (useState/useEffect/useMemo/useCallback)
+            </li>
             <li>상태관리 & 패턴 (Context / Redux / HOC)</li>
             <li>구조적 설계와 렌더링 최적화</li>
           </ol>

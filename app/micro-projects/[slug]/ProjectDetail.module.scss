@@ -1,71 +1,71 @@
+@use "@/assets/styles" as *;
+
+.detail {
+  position: relative;
+  padding-inline: var(--space-fluid);
+  padding-top: rem(30);
+}
 .header {
+  // margin-top: rem(60);
+  position: relative;
+  margin-bottom: rem(26);
+}
+.headerInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2);
-  align-items: baseline;
-  justify-content: space-between;
+  gap: rem(20);
 }
 
-.meta {
-  color: var(--muted);
-  font-size: 0.9rem;
+.left {
+  min-width: 0; /* 내부 컴포넌트가 넘치지 않도록 */
+  // background: var(--surface-1);
+  // border: 1px solid var(--border);
+  // border-radius: rem(12);
+  margin-right: auto;
+  // width: 100%;
+  width: auto;
+  flex: 1;
 }
 
-.hero {
-  margin: var(--space-6) 0 var(--space-4);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  background: color-mix(in oklab, var(--surface) 85%, var(--text) 15%);
-}
-
-.heroImg {
+.right {
+  padding: rem(16);
   width: 100%;
-  display: block;
-  object-fit: cover;
+  margin-left: auto;
 }
 
-.desc {
-  color: var(--text);
-  margin-bottom: var(--space-6);
+.checklist {
+  display: grid;
+  gap: rem(8);
+
+  li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    column-gap: rem(8);
+
+    /* 체크 마커 */
+    &::before {
+      content: "✓";
+      color: var(--link);
+      font-weight: 700;
+      line-height: 1;
+      margin-top: 0.2em;
+    }
+  }
 }
 
-.actions {
-  display: flex;
-  gap: var(--space-3);
-}
-
-.btnPrimary,
-.btnSecondary {
-  display: inline-block;
-  padding: 0.55rem 1rem;
-  border-radius: var(--radius-md);
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.06s ease, background-color 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.btnPrimary {
-  color: #fff;
-  background: var(--primary);
-  border: 1px solid var(--primary-600);
-}
-.btnPrimary:hover {
-  background: var(--primary-600);
-}
-.btnPrimary:active {
-  transform: translateY(1px);
-}
-
-.btnSecondary {
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-}
-.btnSecondary:hover {
-  border-color: var(--primary);
-}
-.btnSecondary:active {
-  transform: translateY(1px);
+@media (min-width: 820px) {
+  .right {
+    flex: 0 0 clamp(rem(260), 30%, rem(350));
+  }
+  .left {
+    flex: 1 1 0;
+  }
 }
