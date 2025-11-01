@@ -8,12 +8,14 @@ localStorage, 필터 기능, 접근성 요소는 기본 버전과 동일하게 �
 
 ### 컴포넌트 구조
 
+```
 lab-todo-components/
-|_ TodoApp.jsx # 전체 상태 관리 (todos, filter, input)
-|_ TodoForm.jsx # 입력 폼 및 추가 버튼
-|_ TodoList.jsx # 필터링된 목록 출력
-|_ TodoItem.jsx # 개별 항목 렌더링 및 이벤트 처리
-|\_ TodoApp.module.scss # 스타일 모듈
+ |_ TodoApp.jsx # 전체 상태 관리 (todos, filter, input)
+ |_ TodoForm.jsx # 입력 폼 및 추가 버튼
+ |_ TodoList.jsx # 필터링된 목록 출력
+ |_ TodoItem.jsx # 개별 항목 렌더링 및 이벤트 처리
+ |_ TodoApp.module.scss # 스타일 모듈
+```
 
 ### 주요 기능
 
