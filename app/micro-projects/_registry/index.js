@@ -1,9 +1,9 @@
-import { todoProject } from "./todo";
+import { todoProject, todoComponentsProject } from "./todo";
 // import { weatherProject } from "./weather";
 
 export const projectRegistry = {
   todo: todoProject,
-  // weather: weatherProject,
+  "todo-components": todoComponentsProject,
 };
 
 export const components = Object.fromEntries(
