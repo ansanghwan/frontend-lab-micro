@@ -1,8 +1,8 @@
 export const projects = [
   {
     slug: "todo",
-    name: "Todo App",
-    description: "로컬 스토리지 기반의 간단한 투두 — 추가/토글/삭제/필터",
+    name: "Todo List (Basic)",
+    description: "단일 컴포넌트 구조의 기본 Todo 앱",
     tags: ["React", "useState", "localStorage"],
     links: {
       repo: "https://github.com/ansanghwan/frontend-lab-micro",
@@ -31,6 +31,11 @@ export const projects = [
     ],
     period: "2025.10",
     version: "v1",
+  },
+  {
+    slug: "todo-components", // ✅ 새로 추가
+    name: "Todo List (Components)",
+    description: "컴포넌트를 분리하여 유지보수를 개선한 Todo 앱",
   },
   // ...다른 프로젝트들
 ];
