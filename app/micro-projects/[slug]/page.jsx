@@ -20,7 +20,10 @@ export default async function ProjectDetail({ params }) {
       <div className={styles.header}>
         <div className={`section-card ${styles.headerInner}`}>
           <h1>{project.name}</h1>
-          <p className="muted">{project.description}</p>
+          <p className={styles.pojectDesc}> {project.description}</p>
+          {project.startedAt && (
+            <p className={styles.date}> {project.startedAt}</p>
+          )}
         </div>
       </div>
 

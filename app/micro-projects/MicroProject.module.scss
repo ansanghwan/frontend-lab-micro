@@ -1,0 +1,52 @@
+@use "@/assets/styles" as *;
+
+.microProject {
+  max-width: rem(920);
+  margin: 0 auto;
+  padding: rem(46) var(--space-fluid);
+}
+
+.lst {
+  margin-top: rem(30);
+  > li {
+    margin: 0;
+    &:not(:first-child) {
+      border-top: 1px solid var(--border-list);
+      a {
+        padding-top: rem(16);
+      }
+    }
+    > a {
+      display: block;
+      color: var(--text-card);
+      padding-bottom: rem(16);
+    }
+  }
+}
+
+.name {
+  font-size: rem(18);
+  font-weight: 700;
+  margin: 0;
+}
+.descWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.desc {
+  margin: 0;
+  margin-right: auto;
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: rem(18);
+}
+.date {
+  margin-left: auto;
+  opacity: 0.5;
+  font-size: rem(16);
+  margin: 0;
+  line-height: 2;
+}
