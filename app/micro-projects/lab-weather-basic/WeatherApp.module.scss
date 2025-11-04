@@ -19,16 +19,20 @@
     font-size: rem(16);
     background: var(--bg-input);
     color: var(--text);
+    width: calc(100% - 60px);
   }
 
-  button:not(.positonBtn) {
+  button {
+    cursor: pointer;
+  }
+  .searchBtn {
+    width: 60px;
     padding: rem(8) rem(16);
     color: #fff;
     border: none;
     border-radius: 0 rem(6) rem(6) 0;
-    cursor: pointer;
   }
-  .positonBtn {
+  .positionBtn {
     margin-top: rem(10);
     width: 100%;
   }
