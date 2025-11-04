@@ -64,11 +64,15 @@ export default function WeatherApp() {
           placeholder="도시 이름 (예: Seoul)"
           aria-label="City name"
         />
-        <button type="submit" disabled={loading || !city.trim()}>
+        <button
+          className={styles.searchBtn}
+          type="submit"
+          disabled={loading || !city.trim()}
+        >
           {loading ? "검색 중..." : "검색"}
         </button>
         <button
-          className={styles.positonBtn}
+          className={styles.positionBtn}
           type="button"
           onClick={handleMyLocation}
           disabled={loading}
