@@ -6,12 +6,17 @@ export const projects = [
     startedAt: "2025-10-31",
   },
   {
-    slug: "todo-components", // ✅ 새로 추가
+    slug: "todo-components",
     name: "Todo List (Components)",
     description: "컴포넌트를 분리하여 유지보수를 개선한 Todo App",
     startedAt: "2025-11-01",
   },
-  // ...다른 프로젝트들
+  {
+    slug: "weather",
+    name: "Weather App",
+    description: "OpenWeather API를 활용한 실시간 날씨 조회 App",
+    startedAt: "2025-11-03",
+  },
 ];
 
 // {
