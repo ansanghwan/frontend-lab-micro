@@ -1,0 +1,94 @@
+@use "@/assets/styles" as *;
+
+.weather {
+  max-width: rem(600);
+  padding: rem(32) var(--space-fluid);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: rem(20);
+
+  input {
+    flex: 1;
+    padding: rem(8) rem(12);
+    border: 1px solid var(--border);
+    border-radius: rem(6) 0 0 rem(6);
+    font-size: rem(16);
+    background: var(--bg-input);
+    color: var(--text);
+    width: calc(100% - 60px);
+  }
+
+  button {
+    cursor: pointer;
+  }
+  .searchBtn {
+    width: 60px;
+    padding: rem(8) rem(16);
+    color: #fff;
+    border: none;
+    border-radius: 0 rem(6) rem(6) 0;
+  }
+  .positionBtn {
+    margin-top: rem(10);
+    width: 100%;
+  }
+}
+
+.result {
+  margin-top: rem(24);
+}
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+  padding: rem(16);
+  border-radius: rem(12);
+  background: var(--bg-card);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.temp {
+  font-size: rem(28);
+  font-weight: 700;
+}
+
+.desc {
+  color: var(--text-muted);
+  font-size: rem(16);
+  margin-top: rem(4);
+}
+
+.error {
+  color: var(--error);
+  font-weight: 500;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.9s linear infinite;
+  opacity: 0.7;
+}
+.loadingText {
+  opacity: 0.8;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

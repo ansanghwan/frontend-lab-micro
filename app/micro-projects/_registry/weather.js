@@ -1,5 +1,5 @@
 import WeatherAppBasic from "../lab-weather-basic/WeatherApp";
-
+import WeatherAppComponents from "../lab-weather-components/WeatherApp";
 // ✅ Components 버전
 export const weatherProject = {
   component: WeatherAppBasic,
@@ -22,6 +22,40 @@ export const weatherProject = {
         <p>
           아직은 API 문서를 읽는 것도, 실제로 연결하는 것도 익숙하지 않지만 여러
           번 연습하다 보면 자연스럽게 감을 잡게 될 거라 믿습니다.
+        </p>
+      </div>
+    </>
+  ),
+};
+
+// ✅ Components 버전
+export const weatherComponentsProject = {
+  component: WeatherAppComponents,
+  requirements: (
+    <>
+      <ul>
+        <li>입력 폼을 별도 컴포넌트(WeatherForm)로 분리</li>
+        <li>날씨 결과 표시를 WeatherCard 컴포넌트로 분리</li>
+        <li>에러 메시지를 WeatherError 컴포넌트로 분리</li>
+        <li>로딩 상태를 WeatherLoading 컴포넌트로 분리 (스피너/텍스트)</li>
+        <li>부모 컴포넌트(WeatherApp)가 상태(state) 및 API 로직을 관리</li>
+        <li>props 구조 분해를 통해 자식 간 데이터와 이벤트 전달</li>
+        <li>OpenWeather API (fetchByCity / fetchByCoords) 모듈화</li>
+        <li>로딩 중일 때 버튼 비활성화 및 시각적 표시</li>
+      </ul>
+
+      <h2>Memo</h2>
+      <div>
+        <p>
+          이번 컴포넌트 버전에서는 WeatherApp의 구조를 역할별로 분리했습니다.
+        </p>
+        <p>
+          Form, Card, Error, Loading 네 개의 컴포넌트로 나누며 props 흐름과 상태
+          관리 구조를 파악하려고 노력했습니다.
+        </p>
+        <p>
+          아직 컴포넌트 분리가 완전히 익숙하진 않지만, 조금씩 감이 오고
+          있습니다.
         </p>
       </div>
     </>

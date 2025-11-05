@@ -13,9 +13,15 @@ export const projects = [
   },
   {
     slug: "weather",
-    name: "Weather App",
+    name: "Weather App (Basic)",
     description: "OpenWeather API를 활용한 실시간 날씨 조회 App",
     startedAt: "2025-11-03",
+  },
+  {
+    slug: "weather-components",
+    name: "Weather App (Components)",
+    description: "컴포넌트 단위로 구조를 분리한 Weather App",
+    startedAt: "2025-11-05",
   },
 ];
 
