@@ -23,6 +23,12 @@ export const projects = [
     description: "컴포넌트 단위로 구조를 분리한 Weather App",
     startedAt: "2025-11-05",
   },
+  {
+    slug: "movie",
+    name: "Movie Finder (Basic)",
+    description: "TMDB API를 활용한 영화 검색 및 결과 표시 App",
+    startedAt: "2025-11-06",
+  },
 ];
 
 // {
