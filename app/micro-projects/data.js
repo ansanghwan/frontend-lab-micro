@@ -29,6 +29,13 @@ export const projects = [
     description: "TMDB API를 활용한 영화 검색 및 결과 표시 App",
     startedAt: "2025-11-06",
   },
+
+  {
+    slug: "movie-components",
+    name: "Movie Finder (Components)",
+    description: "컴포넌트 단위로 구조를 분리한 Movie Finder App",
+    startedAt: "2025-11-08",
+  },
 ];
 
 // {
