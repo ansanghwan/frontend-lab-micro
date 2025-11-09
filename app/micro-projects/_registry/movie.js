@@ -1,5 +1,6 @@
 import movieAppBasic from "../lab-movie-basic/MovieApp";
-// ✅ Components 버전
+import movieAppBasicComponents from "../lab-movie-components/MovieApp";
+
 export const movieProject = {
   component: movieAppBasic,
   requirements: (
@@ -17,6 +18,29 @@ export const movieProject = {
         <li>포스터 미존재 시 대체 UI 표시</li>
         <li>이미지 lazy loading 적용 (img loading="lazy")</li>
       </ul>
+    </>
+  ),
+};
+
+export const movieComponentsProject = {
+  component: movieAppBasicComponents,
+  requirements: (
+    <>
+      <ul>
+        <li>Form, List, Card 세 개의 컴포넌트로 분리</li>
+        <li>부모(MovieApp)에서 props로 상태와 핸들러 전달</li>
+        <li>API 호출 및 로딩, 오류 상태 관리</li>
+        <li>조건부 렌더링으로 로딩/에러/빈 상태 처리</li>
+        <li>TMDB API를 통한 영화 검색 결과 표시</li>
+      </ul>
+
+      <h2>Memo</h2>
+      <div>
+        <p>
+          이제는 컴포넌트 분리 연습을 거듭하면서 점점 자연스럽게 익숙해지고
+          있음을 느낍니다.
+        </p>
+      </div>
     </>
   ),
 };
