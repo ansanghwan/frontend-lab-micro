@@ -12,7 +12,7 @@ export const metadata = {
     siteName: "Sanghwan Frontend Lab",
     images: [
       {
-        url: "/ansanghwan_character.png",
+        url: "https://sanghwan-mini-project.netlify.app/ansanghwan_character.png",
         alt: "Sanghwan Frontend Lab Open Graph Image",
       },
     ],
