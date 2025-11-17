@@ -36,6 +36,12 @@ export const projects = [
     description: "컴포넌트 단위로 구조를 분리한 Movie Finder App",
     startedAt: "2025-11-08",
   },
+  {
+    slug: "bmi",
+    name: "BMI Calculator",
+    description: "입력과 동시에 체질량지수를 계산하고 분류를 안내",
+    startedAt: "2025-11-15",
+  },
 ];
 
 // {
