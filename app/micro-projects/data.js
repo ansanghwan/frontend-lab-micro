@@ -1,5 +1,11 @@
 export const projects = [
   {
+    slug: "password",
+    name: "Password Generator",
+    description: "자동 비밀번호 생성기",
+    startedAt: "2025-11-19",
+  },
+  {
     slug: "bmi",
     name: "BMI Calculator",
     description: "입력과 동시에 체질량지수를 계산하고 분류를 안내",
