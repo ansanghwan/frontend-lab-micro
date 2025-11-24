@@ -75,7 +75,7 @@ export default function about() {
               <p>
                 최근에는
                 <strong className={styles.highlight}>
-                  현대면세점 이커머스 프로젝트에서 퍼블리싱 PL로 참여해 가이드
+                  현대면세점(h.oney) 프로젝트에서 퍼블리싱 PL로 참여해 가이드
                   제작·의사결정·팀 리드 및 오픈·철수까지 전 과정을 수행
                 </strong>
                 했습니다.
