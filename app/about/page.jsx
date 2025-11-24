@@ -5,7 +5,7 @@ export default function about() {
     <div className={styles.aboutWrap}>
       <h1>Aligned Design. Balanced Code.</h1>
       <div className={styles.about}>
-        {/* <div className={styles.sideBar}>
+        <div className={styles.sideBar}>
           <section className={`section-card ${styles.sideBarCard}`}>
             <div className={styles.profile}>
               <div className={styles.profileLeft}>
@@ -36,7 +36,7 @@ export default function about() {
               </p>
             </div>
           </section>
-        </div> */}
+        </div>
 
         <div className={styles.aboutCont}>
           <section className="section-card">

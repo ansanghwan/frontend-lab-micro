@@ -17,20 +17,20 @@
   // --Layout-gutter: 16px;
   // gap: var(--Layout-gutter);
   // grid-auto-flow: row;
-  --Layout-gutter: 16px;
-  display: grid;
-  grid-template-columns: 1fr; // 모바일 기본 1컬럼
-  gap: var(--Layout-gutter);
-  overflow-x: hidden; // 임시로 스크롤 방지
+  // --Layout-gutter: 16px;
+  // display: grid;
+  // grid-template-columns: 1fr; // 모바일 기본 1컬럼
+  // gap: var(--Layout-gutter);
+  // overflow-x: hidden; // 임시로 스크롤 방지
 }
 .sideBar {
   // grid-column: 1;
   grid-row: 1;
   width: 100%;
 }
-.sideBarCard {
-  margin-bottom: 0;
-}
+// .sideBarCard {
+//   margin-bottom: 0;
+// }
 .profile {
   display: flex;
   flex-wrap: wrap;
