@@ -60,7 +60,8 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: clamp(rem(24), 4vw, rem(36));
+  margin-bottom: rem(16);
 }
 h2 {
   font-size: 1.5rem;
@@ -79,7 +80,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 var(--space-1);
+  margin: 0;
   color: inherit;
 }
 
@@ -344,5 +345,11 @@ button.btn-toggle-theme {
   h5,
   h6 {
     color: var(--text-card-tit);
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: rem(34);
   }
 }

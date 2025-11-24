@@ -7,7 +7,7 @@ export const projects = [
   },
   {
     slug: "bmi",
-    name: "BMI Calculator",
+    name: "Bmi Calculator",
     description: "입력과 동시에 체질량지수를 계산하고 분류를 안내",
     startedAt: "2025-11-15",
   },

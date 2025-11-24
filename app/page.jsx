@@ -4,9 +4,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className={styles.container}>
-      {/* 헤더 카드(선택) */}
+      <h1>React Micro Projects</h1>
       <section className={`section-card ${styles.headerCard}`}>
-        <h1>React Micro Projects</h1>
         <p>
           만들며 숙달하는 React 기술 — 작은 프로젝트로 React의 주요 기술을
           손으로 익히는 실습의 흔적
@@ -25,7 +24,7 @@ export default function Home() {
       </section>
 
       {/* README 스타일 본문 */}
-      <article className={`section-card ${styles.prologue}`}>
+      <section className={`section-card ${styles.prologue}`}>
         <div className="section-card__sec">
           <h2>Prologue</h2>
           <p>
@@ -71,9 +70,9 @@ export default function Home() {
           리액트 기술 전반을 학습하고 숙달하는 것을 목표로 합니다.
         </blockquote> */}
         </div>
-      </article>
+      </section>
 
-      <article className={`section-card ${styles.tech}`}>
+      <section className={`section-card ${styles.tech}`}>
         <div className="section-card__sec">
           <h2>Tech Stack & Configuration</h2>
           <ul>
@@ -88,8 +87,9 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </article>
-      <article className={`section-card ${styles.goals}`}>
+      </section>
+
+      <section className={`section-card ${styles.goals}`}>
         <div className="section-card__sec">
           <h2>Learning Goals</h2>
           <ol>
@@ -110,7 +110,7 @@ export default function Home() {
             © Sanghwan An — <a href="https://github.com/ansanghwan">GitHub</a>
           </p>
         </div>
-      </article>
+      </section>
     </main>
   );
 }

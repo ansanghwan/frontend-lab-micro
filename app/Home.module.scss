@@ -1,19 +1,19 @@
 @use "../assets/styles" as *;
 
 .container {
-  max-width: 920px;
+  max-width: rem(956);
   margin: 0 auto;
-  // padding: clamp(20px, 4vw, 40px) 20px;
-  padding: rem(30) var(--space-fluid);
+  padding: rem(46) var(--space-fluid);
+  > section:not(.headerCard) {
+    p {
+      max-width: rem(720);
+    }
+  }
 }
 
 .headerCard {
   margin-bottom: 20px;
 
-  h1 {
-    font-size: clamp(rem(24), 4vw, rem(36));
-    margin: 0 0 6px;
-  }
   p {
     margin: 0;
   }
@@ -59,5 +59,20 @@
   }
   .badgeWrap {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    section {
+      font-size: remx(20);
+      line-height: 1.5;
+      h2 {
+        font-size: remx(32);
+      }
+      p + p {
+        margin-top: rem(16);
+      }
+    }
   }
 }
