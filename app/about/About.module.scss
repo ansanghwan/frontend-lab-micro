@@ -38,8 +38,7 @@
   gap: rem(14);
 }
 .profileLeft {
-  width: 100%;
-  max-width: 200px;
+  width: clamp(rem(100), 40%, rem(240));
   margin: 0 auto;
 }
 .profileRight {
@@ -48,9 +47,6 @@
 .picture {
   position: relative;
   display: block;
-  // width: clamp(rem(100), 20%, rem(240));
-  width: 100%;
-  max-width: rem(200);
   overflow: hidden;
   border-radius: 100%;
   background: #006eb9;
