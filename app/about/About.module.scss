@@ -17,6 +17,7 @@
   // --Layout-gutter: 16px;
   // gap: var(--Layout-gutter);
   // grid-auto-flow: row;
+  --Layout-gutter: 16px;
   display: grid;
   grid-template-columns: 1fr; // 모바일 기본 1컬럼
   gap: var(--Layout-gutter);
@@ -37,7 +38,8 @@
   gap: rem(14);
 }
 .profileLeft {
-  width: clamp(rem(100), 40%, rem(240));
+  width: 100%;
+  max-width: 200px;
   margin: 0 auto;
 }
 .profileRight {
@@ -48,6 +50,7 @@
   display: block;
   // width: clamp(rem(100), 20%, rem(240));
   width: 100%;
+  max-width: rem(200);
   overflow: hidden;
   border-radius: 100%;
   background: #006eb9;
@@ -148,7 +151,6 @@
   // }
 
   .about {
-    --Layout-gutter: 16px;
     --Layout-sidebar-width: 256px;
     grid-template-columns:
       var(--Layout-sidebar-width)
