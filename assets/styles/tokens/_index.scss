@@ -11,12 +11,13 @@
   --bg-header: transparent;
   --bg-white-cont: #faf9f5;
   --bg-section-card: #faf9f5;
-
+  --bg-highlight: #e4dacd;
   --text: #30302e;
   --text-card: #141413;
   --text-card-tit: #141413;
   --muted: #6b7280;
   --surface: #ffffff;
+  --highlight-text: #000;
 
   --border: #14141333;
   --border-list: #b0aea5;
@@ -64,6 +65,7 @@
 html[data-theme="dark"] {
   --bg: #060b0f;
   --bg-section-card: #121820;
+  --bg-highlight: #cdd3e4;
 
   --text: #e5e7eb;
   --text-card: #a9b3be;

@@ -1,0 +1,157 @@
+@use "../../assets/styles" as *;
+
+.aboutWrap {
+  max-width: rem(1280);
+  margin: 0 auto;
+  padding: rem(30) var(--space-fluid);
+  h1 {
+    margin-bottom: rem(16);
+    letter-spacing: rem(-0.3);
+  }
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr; // 모바일은 무조건 단일 컬럼
+  --Layout-sidebar-width: 0px;
+  --Layout-gutter: 16px;
+  gap: var(--Layout-gutter);
+  grid-auto-flow: row;
+}
+.sideBar {
+  // grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: rem(14);
+}
+.profileLeft {
+  width: clamp(rem(100), 40%, rem(240));
+  margin: 0 auto;
+}
+.profileRight {
+  flex: 1;
+}
+.picture {
+  position: relative;
+  display: block;
+  // width: clamp(rem(100), 20%, rem(240));
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+  background: #006eb9;
+  &::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: rem(250);
+    height: auto;
+  }
+}
+.role {
+  margin: rem(6) 0;
+  font-size: remx(14);
+  font-weight: 500;
+  opacity: 0.65;
+}
+.name {
+  display: flex;
+  gap: 12px;
+}
+.hanjaIitem {
+  position: relative;
+  margin-bottom: 0;
+}
+.hanja {
+  display: block;
+  font-size: remx(24);
+  font-weight: 600;
+  text-align: center;
+}
+
+.hanjaDesc {
+  font-size: rem(14);
+  opacity: 0.6;
+  margin-top: 2px;
+  // color: #3376a3;
+  font-weight: 500;
+}
+
+.quote {
+  width: 100%;
+  margin: rem(10) 0 0;
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: 500;
+}
+.selfIntro {
+  margin-bottom: rem(20);
+}
+.highlight {
+  background: var(--bg-highlight);
+  color: var(--highlight-text);
+  font-weight: 600;
+}
+.moreProject {
+  margin-top: rem(30);
+  text-align: right;
+}
+@media (max-width: 322px) {
+  .hanjaDesc {
+    font-size: rem(12);
+  }
+}
+@media (min-width: 560px) {
+  .role {
+    font-size: remx(18);
+  }
+  .profileLeft {
+    width: rem(180);
+  }
+  .hanja {
+    text-align: left;
+    font-size: remx(30);
+    font-weight: 500;
+  }
+  .quote {
+    font-size: remx(18);
+    margin: rem(6) 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    --Layout-sidebar-width: 256px;
+    grid-template-columns:
+      var(--Layout-sidebar-width)
+      minmax(0, calc(100% - var(--Layout-sidebar-width)));
+    grid-auto-flow: column;
+  }
+  .selfIntro {
+    max-width: rem(720);
+    font-size: remx(20);
+    line-height: 1.5;
+    margin-bottom: rem(40);
+    h2 {
+      font-size: remx(32);
+    }
+    p + p {
+      margin-top: rem(16);
+    }
+  }
+  .highlight {
+    font-weight: 500;
+  }
+}
