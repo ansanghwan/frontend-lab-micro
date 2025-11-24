@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.container}>
+    <div className={styles.container}>
       <h1>React Micro Projects</h1>
       <section className={`section-card ${styles.headerCard}`}>
         <p>
@@ -111,6 +111,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
