@@ -3,34 +3,17 @@
 .aboutWrap {
   max-width: rem(1280);
   margin: 0 auto;
-  padding: rem(30) var(--space-fluid);
+  padding: rem(46) var(--space-fluid);
   h1 {
     margin-bottom: rem(16);
     letter-spacing: rem(-0.3);
   }
 }
 
-.about {
-  // display: grid;
-  // grid-template-columns: 1fr; // 모바일은 무조건 단일 컬럼
-  // --Layout-sidebar-width: 0px;
-  // --Layout-gutter: 16px;
-  // gap: var(--Layout-gutter);
-  // grid-auto-flow: row;
-  // --Layout-gutter: 16px;
-  // display: grid;
-  // grid-template-columns: 1fr; // 모바일 기본 1컬럼
-  // gap: var(--Layout-gutter);
-  // overflow-x: hidden; // 임시로 스크롤 방지
-}
 .sideBar {
-  // grid-column: 1;
-  grid-row: 1;
   width: 100%;
 }
-// .sideBarCard {
-//   margin-bottom: 0;
-// }
+
 .profile {
   display: flex;
   flex-wrap: wrap;
@@ -138,21 +121,17 @@
 }
 
 @media (min-width: 768px) {
-  // .about {
-  //   --Layout-sidebar-width: 256px;
-  //   grid-template-columns:
-  //     var(--Layout-sidebar-width)
-  //     minmax(0, calc(100% - var(--Layout-sidebar-width)));
-  //   grid-auto-flow: column;
-  // }
-
   .about {
-    --Layout-sidebar-width: 256px;
-    grid-template-columns:
-      var(--Layout-sidebar-width)
-      minmax(0, calc(100% - var(--Layout-sidebar-width)));
-    grid-auto-flow: column;
+    margin-top: rem(36);
+    display: grid;
+    grid-template-columns: 256px minmax(0, 1fr);
+    gap: 20px;
   }
+
+  .sideBar {
+    grid-row: 1;
+  }
+
   .selfIntro {
     max-width: rem(720);
     font-size: remx(20);
