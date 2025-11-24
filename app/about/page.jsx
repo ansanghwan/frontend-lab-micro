@@ -6,7 +6,7 @@ export default function about() {
       <h1>Aligned Design. Balanced Code.</h1>
       <div className={styles.about}>
         <div className={styles.sideBar}>
-          <section className="section-card">
+          <section className={`section-card ${styles.sideBarCard}`}>
             <div className={styles.profile}>
               <div className={styles.profileLeft}>
                 <span className={styles.picture}>

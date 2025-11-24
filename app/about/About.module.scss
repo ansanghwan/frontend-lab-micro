@@ -11,19 +11,26 @@
 }
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr; // 모바일은 무조건 단일 컬럼
-  --Layout-sidebar-width: 0px;
+  // display: grid;
+  // grid-template-columns: 1fr; // 모바일은 무조건 단일 컬럼
+  // --Layout-sidebar-width: 0px;
+  // --Layout-gutter: 16px;
+  // gap: var(--Layout-gutter);
+  // grid-auto-flow: row;
   --Layout-gutter: 16px;
+  display: grid;
+  grid-template-columns: 1fr; // 모바일 기본 1컬럼
   gap: var(--Layout-gutter);
-  grid-auto-flow: row;
+  overflow-x: hidden; // 임시로 스크롤 방지
 }
 .sideBar {
   // grid-column: 1;
   grid-row: 1;
   width: 100%;
 }
-
+.sideBarCard {
+  margin-bottom: 0;
+}
 .profile {
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +63,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    width: rem(250);
+    width: 90%;
+    max-width: rem(250);
     height: auto;
   }
 }
@@ -132,6 +140,14 @@
 }
 
 @media (min-width: 768px) {
+  // .about {
+  //   --Layout-sidebar-width: 256px;
+  //   grid-template-columns:
+  //     var(--Layout-sidebar-width)
+  //     minmax(0, calc(100% - var(--Layout-sidebar-width)));
+  //   grid-auto-flow: column;
+  // }
+
   .about {
     --Layout-sidebar-width: 256px;
     grid-template-columns:
