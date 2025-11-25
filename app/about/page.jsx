@@ -10,7 +10,7 @@ export default function about() {
             <div className={styles.profile}>
               <div className={styles.profileLeft}>
                 <span className={styles.picture}>
-                  <img src="/images/ash.png" alt="안상환" />
+                  <img src="/images/ash.jpg" alt="안상환" />
                 </span>
               </div>
               <div className={styles.profileRight}>
