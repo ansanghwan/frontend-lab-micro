@@ -32,6 +32,8 @@
   overflow: hidden;
   border-radius: 100%;
   background: #a76d55;
+  opacity: 0;
+  animation: fadein 0.4s 0.2s ease-in forwards;
   &::after {
     content: "";
     display: block;
@@ -43,8 +45,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    // width: 90%;
-    // max-width: rem(250);
     height: auto;
   }
 }
@@ -144,5 +144,14 @@
   }
   .highlight {
     font-weight: 500;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
