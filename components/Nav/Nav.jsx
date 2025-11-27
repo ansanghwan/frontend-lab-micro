@@ -42,6 +42,22 @@ export default function Nav({ className = "" }) {
     setIsOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    const body = document.body;
+    const html = document.documentElement;
+
+    if (isOpen) {
+      html.classList.add("scroll-lock");
+    } else {
+      html.classList.remove("scroll-lock");
+    }
+
+    // 언마운트 시 정리
+    return () => {
+      html.classList.remove("scroll-lock");
+    };
+  }, [isOpen]);
+
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (

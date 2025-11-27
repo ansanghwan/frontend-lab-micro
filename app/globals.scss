@@ -248,6 +248,14 @@ pre {
   overflow: auto;
 }
 
+html.scroll-lock {
+  height: 100%;
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 /* ===========================
    Helpers
    =========================== */
