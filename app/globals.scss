@@ -278,6 +278,8 @@ pre {
 }
 
 button.btn-toggle-theme {
+  position: relative;
+  z-index: 100;
   background: transparent;
   border-radius: 100%;
   overflow: hidden;
