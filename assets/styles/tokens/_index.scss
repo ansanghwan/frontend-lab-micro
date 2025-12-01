@@ -12,9 +12,11 @@
   --bg-white-cont: #faf9f5;
   --bg-section-card: #faf9f5;
   --bg-highlight: #e4dacd;
+  --bg-soft: parent;
   --text: #30302e;
   --text-card: #141413;
   --text-card-tit: #141413;
+  --text-up: #f6470c;
   --muted: #6b7280;
   --surface: #ffffff;
   --highlight-text: #000;
@@ -71,6 +73,7 @@ html[data-theme="dark"] {
   --text-card: #a9b3be;
   --text-card-tit: #fff;
   --muted: #9ca3af;
+  --text-up: #f00;
   --surface: #0b0b0b;
   --border: #1f2937;
   --border-list: #1f2937;

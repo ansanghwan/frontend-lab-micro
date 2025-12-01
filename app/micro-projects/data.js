@@ -1,5 +1,11 @@
 export const projects = [
   {
+    slug: "crypto",
+    name: "Crypto Basic",
+    description: "실시간 코인 시세",
+    startedAt: "2025-11-29",
+  },
+  {
     slug: "password",
     name: "Password Generator",
     description: "자동 비밀번호 생성기",
