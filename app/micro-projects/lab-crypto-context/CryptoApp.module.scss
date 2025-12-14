@@ -1,0 +1,153 @@
+@use "@/assets/styles" as *;
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: rem(12);
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .rate {
+    font-weight: 600;
+    color: #6b6a6a;
+  }
+
+  @media (min-width: 560px) {
+    h2 {
+      font-size: remx(28);
+    }
+    .rate {
+      font-size: remx(18);
+    }
+  }
+}
+
+/* ✅ 정렬 버튼 영역 */
+.sortControls {
+  margin-bottom: rem(12);
+  text-align: right;
+
+  button {
+    margin-left: rem(6);
+    padding: rem(6) rem(10);
+    border-radius: rem(999);
+    border: 1px solid var(--border);
+    background: var(--bg-soft);
+    color: var(--text);
+    font-size: remx(14);
+    box-shadow: none;
+    cursor: pointer;
+
+    &[aria-pressed="true"] {
+      background: var(--primary-soft, #eef3ff);
+      border-color: var(--primary, #335dff);
+      color: var(--primary, #335dff);
+      font-weight: 600;
+    }
+  }
+}
+.sortDesc {
+  margin-bottom: rem(20);
+  color: var(--muted);
+  font-size: remx(15);
+  @media (min-width: 560px) {
+    text-align: right;
+    white-space: pre-line;
+  }
+}
+
+.cryptoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: rem(16);
+
+  @media (min-width: 560px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  padding: rem(16);
+  border-radius: rem(10);
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.coninArea {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: rem(4);
+}
+
+.meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.symbol {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.price {
+  display: flex;
+  margin-top: rem(6);
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: rem(10);
+}
+
+.usd {
+  font-weight: 600;
+}
+
+.krw {
+  font-size: remx(14);
+  color: var(--text-muted);
+}
+
+.noticeWrap {
+  margin: rem(20) 0;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.change24 {
+  text-align: right;
+}
+.notice {
+  flex: 1;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+.up {
+  color: var(--text-up);
+}

@@ -3,7 +3,7 @@ import { weatherProject, weatherComponentsProject } from "./weather";
 import { movieProject, movieComponentsProject } from "./movie";
 import { bmiProject } from "./bmi";
 import { passwordProject } from "./password";
-import { cryptoProject } from "./crypto";
+import { cryptoProject, cryptoContextProject } from "./crypto";
 
 export const projectRegistry = {
   todo: todoProject,
@@ -15,6 +15,7 @@ export const projectRegistry = {
   bmi: bmiProject,
   password: passwordProject,
   crypto: cryptoProject,
+  "crypto-context": cryptoContextProject,
 };
 
 export const components = Object.fromEntries(
