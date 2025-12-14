@@ -1,7 +1,13 @@
 export const projects = [
   {
+    slug: "crypto-context",
+    name: "Todo List (context)",
+    description: "실시간 코인 시세 context 버젼",
+    startedAt: "2025-12-13",
+  },
+  {
     slug: "crypto",
-    name: "Crypto Basic",
+    name: "Crypto (Basic)",
     description: "실시간 코인 시세",
     startedAt: "2025-11-29",
   },
