@@ -12,11 +12,9 @@
   --bg-white-cont: #faf9f5;
   --bg-section-card: #faf9f5;
   --bg-highlight: #e4dacd;
-  --bg-soft: parent;
   --text: #30302e;
   --text-card: #141413;
   --text-card-tit: #141413;
-  --text-up: #f6470c;
   --muted: #6b7280;
   --surface: #ffffff;
   --highlight-text: #000;
@@ -24,6 +22,7 @@
   --border: #14141333;
   --border-list: #b0aea5;
   --border-white-cont: #e8e6dc;
+  --code-border: #30302e;
 
   --primary: #2563eb;
   --primary-600: #1d4ed8;
@@ -73,7 +72,6 @@ html[data-theme="dark"] {
   --text-card: #a9b3be;
   --text-card-tit: #fff;
   --muted: #9ca3af;
-  --text-up: #f00;
   --surface: #0b0b0b;
   --border: #1f2937;
   --border-list: #1f2937;
@@ -88,6 +86,8 @@ html[data-theme="dark"] {
 
   /* 기타 */
   --badge-neutral: #e79132;
+  --code-bg: transparent;
+  --code-border: #e5e7eb8a;
 }
 
 /* Optional: follow system theme */
