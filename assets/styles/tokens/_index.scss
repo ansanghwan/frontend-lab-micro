@@ -24,6 +24,7 @@
   --border: #14141333;
   --border-list: #b0aea5;
   --border-white-cont: #e8e6dc;
+  --code-border: #30302e;
 
   --primary: #2563eb;
   --primary-600: #1d4ed8;
@@ -88,6 +89,8 @@ html[data-theme="dark"] {
 
   /* 기타 */
   --badge-neutral: #e79132;
+  --code-bg: transparent;
+  --code-border: #e5e7eb8a;
 }
 
 /* Optional: follow system theme */
