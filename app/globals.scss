@@ -102,10 +102,12 @@ blockquote {
 code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   background: var(--code-bg);
-  border: 1px solid var(--border);
-  padding: 0.2rem 0.4rem;
-  border-radius: 6px;
-  font-size: 0.92em;
+  border: 1px solid var(--code-border);
+  padding: rem(2) rem(6);
+  border-radius: rem(6);
+  font-size: remx(12);
+  margin: rem(1);
+  display: inline-block;
 }
 
 :where(.white-bg-card) code {
