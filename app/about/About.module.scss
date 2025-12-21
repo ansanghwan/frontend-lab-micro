@@ -22,6 +22,8 @@
 .profileLeft {
   width: clamp(rem(100), 40%, rem(240));
   margin: 0 auto;
+  opacity: 0;
+  animation: fadein 0.2s 0.1s ease-in forwards;
 }
 .profileRight {
   flex: 1;
@@ -32,8 +34,7 @@
   overflow: hidden;
   border-radius: 100%;
   background: #a76d55;
-  opacity: 0;
-  animation: fadein 0.4s 0.2s ease-in forwards;
+
   &::after {
     content: "";
     display: block;
