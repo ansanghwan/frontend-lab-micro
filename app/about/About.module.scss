@@ -85,6 +85,43 @@
   line-height: 1.5;
   font-weight: 500;
 }
+
+.careerWrap {
+  margin-top: rem(20);
+  position: relative;
+}
+.CareerList {
+  margin: 0;
+  > li:not(:first-child) {
+    margin-top: rem(6);
+  }
+}
+.CareerListTit {
+  font-weight: 600;
+}
+.CareerListDate {
+  opacity: 0.6;
+  font-size: remx(12);
+}
+.btnView {
+  display: block;
+  margin-top: rem(8);
+  border-radius: rem(8);
+  padding: rem(6) rem(8);
+  text-align: center;
+  font-size: remx(14);
+  border: 2px solid transparent;
+  color: var(--badge-neutral);
+  color: var(--cert-text);
+  background: linear-gradient(var(--cert-bg), var(--cert-bg)) padding-box,
+    var(--cert-border-grad) border-box;
+  letter-spacing: 0.2px;
+  transition: all 0.25s ease;
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  }
+}
 .selfIntro {
   margin-bottom: rem(20);
 }
@@ -117,6 +154,13 @@
   .quote {
     font-size: remx(18);
     margin: rem(6) 0 0;
+  }
+  .CareerListDate {
+    opacity: 0.6;
+    font-size: remx(14);
+  }
+  .btnView {
+    font-size: remx(14);
   }
 }
 

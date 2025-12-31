@@ -1,4 +1,10 @@
 import styles from "./About.module.scss";
+export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function about() {
   return (
@@ -34,6 +40,49 @@ export default function about() {
               <p className={styles.quote}>
                 “편안함 속에서 서로를 돕고 밝게 비추는 깨끗한 비단 같은 사람”
               </p>
+            </div>
+
+            <div className={styles.careerWrap}>
+              <h2>Career</h2>
+
+              <ul className={styles.CareerList}>
+                <li>
+                  <p className={styles.CareerListTit}>가족 돌봄 휴식기</p>
+                  <p className={styles.CareerListDate}>2024.11 – 현재</p>
+                </li>
+                <li>
+                  <p className={styles.CareerListTit}>
+                    Web Publisher / Project Lead (Freelancer)
+                  </p>
+                  <p className={styles.CareerListDate}>
+                    2014년 10월 - 2024년 10월
+                  </p>
+                  <a
+                    href="/docs/KOSA_Career_Certificate_AnSanghwan.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.btnView}
+                  >
+                    KOSA 경력증명서 보기(PDF){" "}
+                  </a>
+                </li>
+                <li>
+                  <p className={styles.CareerListTit}>
+                    대한민국 육군 부사관 (분대장,TOD조장, 소대장)
+                  </p>
+                  <p className={styles.CareerListDate}>
+                    2007년 7월 - 2011년 11월
+                  </p>
+                  <a
+                    href="/docs/Certificate_of_MilitaryService_AnSanghwan.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.btnView}
+                  >
+                    병적증명서 보기 (PDF)
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
         </div>
